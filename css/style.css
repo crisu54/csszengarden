@@ -18,12 +18,14 @@ header {
 	
 }
 
-#zen-summary:before {content:url(../bilder/schalplatte1.png);
+#zen-summary:before {content:url(../bilder/schallplatte.png);
 
-position:relative;
-right:200px;
+position:fixed;
+
 top:0px;
 overflow:visible;
+
+
 
 	
 }

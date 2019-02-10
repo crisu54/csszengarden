@@ -6,44 +6,40 @@ section{
 	background-color:pink;
 	border:4px solid black;
 	overflow:hidden;
-	height:100%;
-  margin-top:480px;
+	height: 100%;
+  margin-top: 480px;
 }
 
 header {
-	background-color:lightblue;
-	background-image:url(../bilder/pic05.jpg);
-	margin-top:-484px;
-  margin-left:-4px;
-  height:480px;
-  width:100%;
-  position:fixed;
-  width:100%;
-
-	padding:1px 0px 417px 0;
-
+	background-image: url(../bilder/pic05.jpg);
+	margin-top: -484px;
+  margin-left: -4px;
+  height: 480px;
+  width: 100%;
+  position: fixed;
+  width: 100%;
 }
 
 header:before{content:url(../bilder/schallplatte.png);/*breite500px höhe 484px*/
-position:fixed; 
-top:242px;    /*anzeigehöhe header background image(pic05.jpg 480-die halbe Bildgröße dieses Bildes ( Schallplatte.png)*/
-margin-left: -250px; /*halbe Bildbreite*/
-padding-left:50%;
+  position: fixed; 
+  top: 242px;    /*anzeigehöhe header background image(pic05.jpg 480-die halbe Bildgröße dieses Bildes ( Schallplatte.png)*/
+  margin-left: -250px; /*halbe Bildbreite*/
+  padding-left: 50%;
 }
 
 .page-wrapper{
-	width:100%;
-	background-color:green;
+	width: 100%;
+	background-color: green;
 	
 }
 
 
 
  aside.sidebar{
-  position:relative;
-  background-color:yellow;
-  width:200px;
-  top:0px;
+  position: relative;
+  background-color: yellow;
+  width: 200px;
+  top: 0px;
 } 
 
 section article{
@@ -57,12 +53,10 @@ section article{
 
 
 #zen-preamble{
-	float:left;
+	float: left;
 }
 #zen-supporting{
-	
-	background-color:red;
-	
-	overflow:auto;
-	width:300px;
+	background-color: red;
+	overflow: auto;
+	width: 300px;
 }

@@ -15,8 +15,8 @@ section *{
   position:relative;
 }
 
-section.intro{
-  :after conten:"";
+section.intro:after{conten:"";
+  
   clear:both;
 }
 
@@ -79,6 +79,9 @@ aside.sidebar{
 section article{
 	background-color:rgba(85, 107, 103, 0.2);
 	width:30%;
+}
+h1{
+  font-size:70px;
 }
 
 

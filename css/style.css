@@ -12,19 +12,26 @@ section{
 
 header {
 	background-image: url(../bilder/pic05.jpg);
-	margin-top: -484px;
-  margin-left: -4px;
+  background-repeat:no-repeat;
+  background-size:cover;
+	top: 0px;
+  left: 0px;
   height: 480px;
   width: 100%;
   position: fixed;
-  width: 100%;
 }
 
-header:before{content:url(../bilder/schallplatte.png);/*breite500px höhe 484px*/
+header:before{
+  background-image:url(../bilder/schallplatte.png);/*breite500px höhe 484px*/
+  width:500px;
+  height:284px;
   position: fixed; 
+  content:"";
+  left:50%;
   top: 242px;    /*anzeigehöhe header background image(pic05.jpg 480-die halbe Bildgröße dieses Bildes ( Schallplatte.png)*/
   margin-left: -250px; /*halbe Bildbreite*/
-  padding-left: 50%;
+
+  
 }
 
 .page-wrapper{
@@ -35,7 +42,7 @@ header:before{content:url(../bilder/schallplatte.png);/*breite500px höhe 484px*
 
 
 
- aside.sidebar{
+aside.sidebar{
   position: relative;
   background-color: yellow;
   width: 200px;

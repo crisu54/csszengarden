@@ -7,11 +7,32 @@ section{
 	border:4px solid black;
 	overflow:hidden;
 	height: 100%;
-  margin-top: 480px;
+  top: 480px;
+  position:relative;
+  z-index:10
+}
+section *{
+  position:relative;
 }
 
-header {
+section.intro{
+  :after conten:"";
+  clear:both;
+}
+
+header{
+  position:fixed;
+  top:0px;
+}
+
+header *{
+  position:relative;
+  z-index:3; /*größer als header before und größer als Header after*/
+}
+
+header:before {
 	background-image: url(../bilder/pic05.jpg);
+  content:"";
   background-repeat:no-repeat;
   background-size:cover;
 	top: 0px;
@@ -19,34 +40,40 @@ header {
   height: 480px;
   width: 100%;
   position: fixed;
+  z-index:1;
 }
 
-header:before{
+header:after{
   background-image:url(../bilder/schallplatte.png);/*breite500px höhe 484px*/
   width:500px;
-  height:284px;
+  height:484px;
   position: fixed; 
   content:"";
   left:50%;
   top: 242px;    /*anzeigehöhe header background image(pic05.jpg 480-die halbe Bildgröße dieses Bildes ( Schallplatte.png)*/
   margin-left: -250px; /*halbe Bildbreite*/
-
-  
+  z-index:1;
+ 
 }
 
 .page-wrapper{
 	width: 100%;
-	background-color: green;
+	background-color: yellow;
 	
 }
 
+#zen-intro{
+  position:relative;
+  z-index:50;
+  width:100%;
 
+}
 
 aside.sidebar{
   position: relative;
   background-color: yellow;
   width: 200px;
-  top: 0px;
+  top: 480px;
 } 
 
 section article{
@@ -55,15 +82,22 @@ section article{
 }
 
 
-
-
-
-
-#zen-preamble{
-	float: left;
+#zen-summary{
+  float:right;
+}
+#zen-requirements{
+  clear:right;
+  background-color:red;
+  width:400px;
+}
+h3{
+  margin:0px;
 }
 #zen-supporting{
-	background-color: red;
-	overflow: auto;
-	width: 300px;
+  top: 480px;
+  
 }
+
+
+
+

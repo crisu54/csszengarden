@@ -7,8 +7,8 @@ section{
 	border-bottom:4px solid black;
 	overflow:hidden;
 	height: 480px;
-  position:relative;
-  z-index: 2;
+/*   position:relative;
+  z-index: 2; */
 }
 
 .summary a{
@@ -57,7 +57,8 @@ header:after{
 }
 
 .page-wrapper{
-	background-color: yellow;	
+	background-color: yellow;
+	position:relative;	
 }
 
 #zen-intro{
@@ -74,6 +75,18 @@ section article{
 	background-color:rgba(85, 107, 103, 0.8);
 	width:30%;
 }
+
+.preamble{
+	background-color:red;
+	z-index:90;
+	position:absolute;
+	top:484px;
+
+	overflow:hidden;
+	z-index:100;
+
+}
+
 h1{
   font-size:70px;
 
@@ -118,15 +131,6 @@ article#zen-summary{
 }
 
 
-.preamble{
-	z-index:90;
-	position:absolute;
-	top:400px;
-	float:left;
-	overflow:hidden;
-	z-index:50;
-
-}
 
 .requirements{
   clear:right;

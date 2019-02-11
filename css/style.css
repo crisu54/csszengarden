@@ -207,7 +207,9 @@ article#zen-participation p{
 }
 article#zen-benefits{
 	background-color:#6a2370;
-	clear:both;
+	position:relative;
+	top:150px;
+
 
 }
 

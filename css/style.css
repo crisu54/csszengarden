@@ -181,7 +181,7 @@ article#zen-benefits p{
 
 	}
 	
-/* #zen-requirements{
+#zen-requirements{
 	width:50%;
 	background-image:url(../bilder/song.png);
 	background-color:rgba(255, 255, 255, 0.4);
@@ -205,12 +205,13 @@ article#zen-benefits p{
 	background-color:white;
 	color:black;
 	padding:15px;
-} */
+}
 
 aricle#zen-requirements. P .col  {
    margin-top: 1.8ex;
    column-count: 2; column-gap:2em;column-width: 570px;
    column-rule-style:dotted; column-rule-width:1px; column-rule-color:silver;
+	 background-color:red;
 }
 
 

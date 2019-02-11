@@ -77,11 +77,17 @@ section article{
 }
 
 .preamble{
-	background-color:red;
+
 	z-index:60;
 	position:absolute;
 	top:484px;
 	left:15%;
+	float:left;
+}
+
+article#zen-preamble p{
+	font-size:20px;
+	color:#690872;
 }
 
 
@@ -151,7 +157,7 @@ h3{
  #zen-explanation{
   width:35%;
   color:red;
-	float:right;
+	xfloat:right;
 	margin-right:15%;
  }
 	 

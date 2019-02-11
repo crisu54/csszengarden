@@ -3,13 +3,12 @@ body{
 }
 
 section{
-	background-color:pink;
-	border:4px solid black;
+	background-color:#7b076c;
+	border-bottom:4px solid black;
 	overflow:hidden;
-	height: 100%;
-  xtop: 480px;
-  xposition:relative;
-  z-index:10;
+	height: 480px;
+  position:relative;
+  z-index: 2;
 }
 
 
@@ -29,8 +28,7 @@ header *{
 } */
 
 header {
-	background: url(../bilder/pic05.jpg)no-repeat center center fixed;;
-  xcontent:"";
+	background: url(../bilder/pic05.jpg)no-repeat center center fixed;
   background-repeat:no-repeat;
   background-size:cover;
 	height: 480px;
@@ -52,9 +50,7 @@ header:after{
 }
 
 .page-wrapper{
-	background-color: yellow;
-
-	
+	background-color: yellow;	
 }
 
 #zen-intro{
@@ -93,8 +89,17 @@ h2{
 
 #zen-summary{
   float:right;
+	z-index:2;
+	position:relative;
+	top:-200px;
 }
-#zen-requirements{
+
+.preamble{
+	z-index:3;
+	position:relative;
+	top:-100px;
+}
+.zen-requirements{
   clear:right;
   background-color:red;
   width:400px;
@@ -105,9 +110,10 @@ h2{
 h3{
   margin:0px;
 }
+
 #zen-supporting{
   xtop: 480px;
-  xposition:relative;
+  position:relative;
   background-color:red;
   overflow:auto;
   background-color:rgba(255, 255, 255, 0.8);

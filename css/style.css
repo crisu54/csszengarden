@@ -67,8 +67,9 @@ header:after{
 
 aside.sidebar{
   position: relative;
-  background-color: yellow;
-  top: 480px;
+  background-color: red;
+	z-index:1;
+
 } 
 
 section article{
@@ -254,9 +255,15 @@ article#zen-benefits p{
 	right:10%;
 	margin-top:200px;
 	float:right;
+}
+#zen-requirements:before{
+	content: url(../bilder/concert.png) 
+	url(../bilder/concert1.png) 
+	url(../bilder/concert2.png);
+	position:absolute;
+	left:-88%;
+	width:50%;
 	
-
-
 }
 
 #zen-requirements h3{
@@ -286,10 +293,16 @@ aricle#zen-requirements. P .col  {
 
 footer  {
 	background-color:black;
-	height:30px;
-	position:relative;
-	top:900px;
+	height:40px;
+	position:fixed;
+	width:100%;
+	bottom:0px;
 	
+	
+}
+body:after{
+	conten""
+	height:30px
 }
 
 	

@@ -11,6 +11,11 @@ section{
   z-index: 2;
 }
 
+.summary a{
+	font-size:1.8em;
+	font-family:verdana;
+	
+}
 
 /* section.intro:after{
   content:"";
@@ -33,6 +38,7 @@ header {
   background-size:cover;
 	height: 480px;
   z-index:1;
+	
 
 }
 
@@ -46,6 +52,7 @@ header:after{
   top: 242px;    /*anzeigehöhe header background image(pic05.jpg 480-die halbe Bildgröße dieses Bildes ( Schallplatte.png)*/
   margin-left: -250px; /*halbe Bildbreite*/
 	z-index:1;
+	;
 	
 }
 
@@ -87,26 +94,45 @@ h2{
 	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #f4e36b, 0 0 30px #f4e36b, 0 0 40px #f4e36b, 0 0 55px #f4e36b, 0 0 75px #f4e36b
 }
 
-.zen-summary{
+.summary{
   float:right;
 	z-index:2;
 	position:relative;
-	top:-100px;
+	top:-200px;
+	right:20px;
+	-webkit-border-radius: 28px 13px 12px 21px;
+	-moz-border-radius: 28px 13px 12px 21px;
+	border-radius: 28px 13px 12px 21px;
+	border: 3px dashed #9436A4;
+	-moz-transform: scale(1.2) rotate(17deg) skew(29deg, 0deg);
+-moz-transform: rotate(17deg) skew(29deg, 0deg);
+-webkit-transform: rotate(17deg) skew(29deg, 0deg);
+-o-transform: rotate(17deg) skew(29deg, 0deg);
+-ms-transform: rotate(17deg) skew(29deg, 0deg);
+transform: rotate(17deg) skew(29deg, 0deg);
 }
 
-.preamble{
-	z-index:3;
-	position:relative;
-	top:-100px;
-	z-index:30;
+article#zen-summary{
+	background-color:#f7d757;
+	padding:5px;
 }
-.zen-requirements{
+
+
+.preamble{
+	z-index:90;
+	position:absolute;
+	top:400px;
+	float:left;
+	overflow:hidden;
+	z-index:50;
+
+}
+
+.requirements{
   clear:right;
   background-color:red;
   width:400px;
 }
-
-
 
 h3{
   margin:0px;
@@ -115,7 +141,7 @@ h3{
 #zen-supporting{
   xtop: 480px;
   position:relative;
-  background-color:red;
+
   overflow:auto;
   background-color:rgba(255, 255, 255, 0.8);
   z-index:90;
@@ -127,8 +153,6 @@ h3{
 	margin-right:15%;
  }
 	 
-
-  
 	article#zen-explanation p{
   font-size:20px;
 	color:#690872;
@@ -144,11 +168,13 @@ article#zen-explanation h3{
 	 width:30%;
 	 position:relative;
 	 left:15%;
+
 	 }
 
 article#zen-participation h3{
   font-size:3em;
 	color:#690872;
+	
 }
 
 article#zen-participation p{
@@ -168,6 +194,7 @@ article#zen-benefits h3{
 	font-family:Verdana;
 	color:#e236f1;
 	text-decoration: underline;
+	padding-top:20px;
 }
 
 article#zen-benefits p{

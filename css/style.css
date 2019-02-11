@@ -252,7 +252,7 @@ article#zen-benefits p{
 	background-color:rgba(255, 255, 255, 0.4);
 	box-shadow: 5px 5px 40px #615f61;
 	position:relative;
-	right:10%;
+	right:15%;
 	margin-top:200px;
 	float:right;
 }
@@ -261,7 +261,8 @@ article#zen-benefits p{
 	url(../bilder/concert1.png) 
 	url(../bilder/concert2.png);
 	position:absolute;
-	left:-88%;
+	overflow:hidden;
+	left:-70%;
 	width:50%;
 	
 }
@@ -284,12 +285,12 @@ article#zen-benefits p{
 
 }
 
-aricle#zen-requirements. P .col  {
+/* aricle#zen-requirements. P .col  {
    margin-top: 1.8ex;
    column-count: 2; column-gap:2em;column-width: 570px;
    column-rule-style:dotted; column-rule-width:1px; column-rule-color:silver;
 	 background-color:red;
-}
+} */
 
 footer  {
 	background-color:black;
@@ -297,20 +298,22 @@ footer  {
 	position:fixed;
 	width:100%;
 	bottom:0px;
+	text-align:center;
 
 	
 	
 }
 body:after{
-	conten""
-	height:30px
+	conten:"";
+	height:40px;
+	display:block;
 }
 
 footer a{
 	color:white;
 	font-size:22px;
 	padding-left:50px;
-	text-align:center;
+	
 	font-family:verdana;
 	
 }	

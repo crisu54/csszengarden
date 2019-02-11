@@ -304,7 +304,7 @@ footer  {
 	
 }
 body:after{
-	conten:"";
+	content:"";
 	height:40px;
 	display:block;
 }
@@ -316,8 +316,28 @@ footer a{
 	
 	font-family:verdana;
 	
-}	
+}
 
+.design-selection{
+	background-color:yellow;
+	float:left;
+	margin-left:50px;
+}	
+.select{
+	color:black;
+	font-family:verdana;
+	font-size:20px;
+}
+
+.design-archives{
+	background-color:green;
+	float:right;
+}
+
+.zen-resources{
+	background-color:gray;
+	float:left;
+}
 
 
 

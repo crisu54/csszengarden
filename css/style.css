@@ -62,7 +62,7 @@ header:after{
 }
 
 #zen-intro{
-  z-index:50;
+  z-index:20;
 }
 
 aside.sidebar{
@@ -78,14 +78,13 @@ section article{
 
 .preamble{
 	background-color:red;
-	z-index:90;
+	z-index:60;
 	position:absolute;
 	top:484px;
-
-	overflow:hidden;
-	z-index:100;
-
+	left:15%;
 }
+
+
 
 h1{
   font-size:70px;
@@ -109,9 +108,9 @@ h2{
 
 .summary{
   float:right;
-	z-index:2;
-	position:relative;
-	top:-200px;
+	z-index:100;
+	position:absolute;
+	top:284px;
 	right:20px;
 	-webkit-border-radius: 28px 13px 12px 21px;
 	-moz-border-radius: 28px 13px 12px 21px;
@@ -145,10 +144,9 @@ h3{
 #zen-supporting{
   xtop: 480px;
   position:relative;
-
   overflow:auto;
   background-color:rgba(255, 255, 255, 0.8);
-  z-index:90;
+  z-index:40;
 } 
  #zen-explanation{
   width:35%;
@@ -199,12 +197,13 @@ article#zen-benefits h3{
 	color:#e236f1;
 	text-decoration: underline;
 	padding-top:20px;
+	width:50%;
 }
 
 article#zen-benefits p{
 	color:white;
 	font-family: verdana;
-	clear:both;
+
 	width:30%;
 	font-size:1.2em;
 	position:relative;
@@ -212,10 +211,12 @@ article#zen-benefits p{
 	text-align:justify;
 }
 
-.zen-benefits:before{
+.benefits:before{
 	content: url(../bilder/song.png);
-	left:10%;
+	right:17%;
 	position:relative;
+	float:right;
+	top:30px
 
 	}
 	
@@ -243,6 +244,7 @@ article#zen-benefits p{
 	background-color:white;
 	color:black;
 	padding:15px;
+
 }
 
 aricle#zen-requirements. P .col  {
@@ -252,7 +254,11 @@ aricle#zen-requirements. P .col  {
 	 background-color:red;
 }
 
-
+footer  {
+	background-color:black;
+	height:30px;
+	
+}
 
 	
 

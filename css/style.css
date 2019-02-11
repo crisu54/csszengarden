@@ -66,9 +66,14 @@ header:after{
 }
 
 aside.sidebar{
-  position: relative;
-  background-color: red;
-	z-index:1;
+
+	background: #2babe1;
+	border-top: 5px solid #edf6ff;
+	clear: both;
+	display: block;
+	float: left;
+	margin-bottom: -5px;
+	width: 100%;
 
 } 
 
@@ -305,6 +310,7 @@ footer  {
 body:after{
 	content:"";
 	height:40px;
+	clear:both;
 	display:block;
 }
 
@@ -333,8 +339,10 @@ footer a{
 	float:right;
 }
 
+.design-selection,
+.design-archives,
 .zen-resources:after{
-	content""
+	content:"";
 	display:block;
 	height:1px;
 

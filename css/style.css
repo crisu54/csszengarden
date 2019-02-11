@@ -209,6 +209,7 @@ article#zen-benefits{
 	background-color:#6a2370;
 	position:relative;
 	top:150px;
+	xopacity:0.5;
 
 
 }
@@ -249,8 +250,11 @@ article#zen-benefits p{
 	background-image:url(../bilder/song.png);
 	background-color:rgba(255, 255, 255, 0.4);
 	box-shadow: 5px 5px 40px #615f61;
-	float:right;
-	clear:both;
+	position:relative;
+	left:15%;
+	padding-top:200px;
+
+
 }
 
 #zen-requirements h3{
@@ -281,6 +285,8 @@ aricle#zen-requirements. P .col  {
 footer  {
 	background-color:black;
 	height:30px;
+	position:relative;
+	top:900px;
 	
 }
 

@@ -72,12 +72,13 @@ aside.sidebar{
 } 
 
 section article{
-	background-color:rgba(85, 107, 103, 0.8);
+	xbackground-color:rgba(85, 107, 103, 0.8);
 	width:30%;
+
 }
 
 .preamble{
-
+	xbackground-color:red;
 	z-index:60;
 	position:absolute;
 	top:484px;
@@ -89,6 +90,11 @@ article#zen-preamble p{
 	font-size:20px;
 	color:#690872;
 }
+article#zen-preamble h3{
+  font-size:3em;
+	color:#690872;
+}
+
 
 
 
@@ -153,13 +159,19 @@ h3{
   overflow:auto;
   background-color:rgba(255, 255, 255, 0.8);
   z-index:40;
+
 } 
  #zen-explanation{
   width:35%;
   color:red;
 	xfloat:right;
 	margin-right:15%;
+	position:relative;
+	left:50%;
  }
+ 
+
+	 
 	 
 	article#zen-explanation p{
   font-size:20px;
@@ -173,15 +185,19 @@ article#zen-explanation h3{
 
 
  #zen-participation{
-	 width:30%;
+	 width:75%;
 	 position:relative;
 	 left:15%;
+	background-color:#c3cac5;
+	position:relative;
+	top:120px;
 
 	 }
 
 article#zen-participation h3{
   font-size:3em;
 	color:#690872;
+
 	
 }
 

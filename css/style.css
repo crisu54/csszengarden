@@ -246,13 +246,15 @@ article#zen-benefits p{
 	}
 	
 #zen-requirements{
-	width:50%;
+	width:40%;
 	background-image:url(../bilder/song.png);
 	background-color:rgba(255, 255, 255, 0.4);
 	box-shadow: 5px 5px 40px #615f61;
 	position:relative;
-	left:15%;
-	padding-top:200px;
+	right:10%;
+	margin-top:200px;
+	float:right;
+	
 
 
 }

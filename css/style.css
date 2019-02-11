@@ -38,8 +38,6 @@ header {
   background-size:cover;
 	height: 480px;
   z-index:1;
-	
-
 }
 
 header:after{
@@ -58,7 +56,8 @@ header:after{
 
 .page-wrapper{
 	background-color: yellow;
-	position:relative;	
+	position:relative;
+	
 }
 
 #zen-intro{
@@ -66,14 +65,14 @@ header:after{
 }
 
 aside.sidebar{
-
+	z-index:100;
+	position:relative;
 	background: #2babe1;
 	border-top: 5px solid #edf6ff;
 	clear: both;
 	display: block;
-	float: left;
-	margin-bottom: -5px;
 	width: 100%;
+
 
 } 
 
@@ -135,11 +134,11 @@ h2{
 	border-radius: 28px 13px 12px 21px;
 	border: 3px dashed #9436A4;
 	-moz-transform: scale(1.2) rotate(17deg) skew(29deg, 0deg);
--moz-transform: rotate(17deg) skew(29deg, 0deg);
--webkit-transform: rotate(17deg) skew(29deg, 0deg);
--o-transform: rotate(17deg) skew(29deg, 0deg);
--ms-transform: rotate(17deg) skew(29deg, 0deg);
-transform: rotate(17deg) skew(29deg, 0deg);
+	-moz-transform: rotate(17deg) skew(29deg, 0deg);
+	-webkit-transform: rotate(17deg) skew(29deg, 0deg);
+	-o-transform: rotate(17deg) skew(29deg, 0deg);
+	-ms-transform: rotate(17deg) skew(29deg, 0deg);
+	transform: rotate(17deg) skew(29deg, 0deg);
 }
 
 article#zen-summary{
@@ -324,29 +323,32 @@ footer a{
 }
 
 .design-selection{
-	background-color:yellow;
+	xbackground-color:yellow;
 	float:left;
 	margin-left:50px;
+	height:200px;
 }	
 .select{
 	color:black;
 	font-family:verdana;
 	font-size:20px;
 }
-
+.zen-resources,
 .design-archives{
-	background-color:green;
-	float:right;
+
+	width:30%;
+	padding-left:50%;
 }
 
-.design-selection,
-.design-archives,
+.design-selection:after,
+.design-archives:after,
 .zen-resources:after{
 	content:"";
 	display:block;
 	height:1px;
 
 }
+
 
 
 

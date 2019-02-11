@@ -297,6 +297,7 @@ footer  {
 	position:fixed;
 	width:100%;
 	bottom:0px;
+
 	
 	
 }
@@ -305,7 +306,14 @@ body:after{
 	height:30px
 }
 
+footer a{
+	color:white;
+	font-size:22px;
+	padding-left:50px;
+	text-align:center;
+	font-family:verdana;
 	
+}	
 
 
 

@@ -7,19 +7,17 @@ section{
 	border:4px solid black;
 	overflow:hidden;
 	height: 100%;
-  top: 480px;
-  position:relative;
+  xtop: 480px;
+  xposition:relative;
   z-index:10;
 }
-section *{
-  position:relative;
-}
 
-section.intro:after{
+
+/* section.intro:after{
   content:"";
   clear:both;
-}
-
+} */
+/* 
 header{
   position:fixed;
   top:0px;
@@ -27,19 +25,15 @@ header{
 
 header *{
   position:relative;
-  z-index:3; /*größer als header before und größer als Header after*/
-}
+  z-index:3; /*größer als header before und größer als Header after
+} */
 
-header:before {
-	background-image: url(../bilder/pic05.jpg);
-  content:"";
+header {
+	background: url(../bilder/pic05.jpg)no-repeat center center fixed;;
+  xcontent:"";
   background-repeat:no-repeat;
   background-size:cover;
-	top: 0px;
-  left: 0px;
-  height: 480px;
-  width: 100%;
-  position: fixed;
+	height: 480px;
   z-index:1;
 
 }
@@ -53,29 +47,23 @@ header:after{
   left:50%;
   top: 242px;    /*anzeigehöhe header background image(pic05.jpg 480-die halbe Bildgröße dieses Bildes ( Schallplatte.png)*/
   margin-left: -250px; /*halbe Bildbreite*/
-  z-index:1;
-
-
- 
+	z-index:1;
+	
 }
 
 .page-wrapper{
-	width: 100%;
 	background-color: yellow;
+
 	
 }
 
 #zen-intro{
-  position:relative;
   z-index:50;
-  width:100%;
-
 }
 
 aside.sidebar{
   position: relative;
   background-color: yellow;
-  width: 200px;
   top: 480px;
 } 
 
@@ -85,10 +73,23 @@ section article{
 }
 h1{
   font-size:70px;
-  color:red;
-  left:100% 
+
+	text-align:center;
+	margin-top:0;
+	padding-top:50px;
+	color: #A7DD3C;
+	Color: #FFFFFF;
+	text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+
 }
 
+h2{
+	font-size:30px;
+	color:red;
+	text-align:center;
+	color: #fff;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #f4e36b, 0 0 30px #f4e36b, 0 0 40px #f4e36b, 0 0 55px #f4e36b, 0 0 75px #f4e36b
+}
 
 #zen-summary{
   float:right;
@@ -98,26 +99,125 @@ h1{
   background-color:red;
   width:400px;
 }
+
+
+
 h3{
   margin:0px;
 }
 #zen-supporting{
-  top: 480px;
-  position:relative;
+  xtop: 480px;
+  xposition:relative;
   background-color:red;
   overflow:auto;
   background-color:rgba(255, 255, 255, 0.8);
   z-index:90;
 } 
  #zen-explanation{
+  width:35%;
+  color:red;
+	float:right;
+	margin-right:15%;
+ }
+	 
 
-   width:40%;
-   color:red;
-   float:right;
-    
-  }
   
+	article#zen-explanation p{
+  font-size:20px;
+	color:#690872;
 }
+	
+article#zen-explanation h3{
+  font-size:3em;
+	color:#690872;
+}
+
+
+ #zen-participation{
+	 width:30%;
+	 position:relative;
+	 left:15%;
+	 }
+
+article#zen-participation h3{
+  font-size:3em;
+	color:#690872;
+}
+
+article#zen-participation p{
+  font-size:20px;
+	color:#690872;
+}
+article#zen-benefits{
+	background-color:#6a2370;
+	clear:both;
+
+}
+
+article#zen-benefits h3{
+	font-size:3.5em;
+	position:relative;
+	left:15%;
+	font-family:Verdana;
+	color:#e236f1;
+	text-decoration: underline;
+}
+
+article#zen-benefits p{
+	color:white;
+	font-family: verdana;
+	clear:both;
+	width:30%;
+	font-size:1.2em;
+	position:relative;
+	left:15%;
+	text-align:justify;
+}
+
+.zen-benefits:before{
+	content: url(../bilder/song.png);
+	left:10%;
+	position:relative;
+
+	}
+	
+/* #zen-requirements{
+	width:50%;
+	background-image:url(../bilder/song.png);
+	background-color:rgba(255, 255, 255, 0.4);
+	box-shadow: 5px 5px 40px #615f61;
+	float:right;
+	clear:both;
+}
+
+#zen-requirements h3{
+	text-decoration: underline;
+	font-size:3.5em;
+	top:10px;
+	background-color:white;
+	color:#5f0460;
+
+}
+
+#zen-requirements p{
+	font-size:1.5em;
+	top:10px;
+	background-color:white;
+	color:black;
+	padding:15px;
+} */
+
+aricle#zen-requirements. P .col  {
+   margin-top: 1.8ex;
+   column-count: 2; column-gap:2em;column-width: 570px;
+   column-rule-style:dotted; column-rule-width:1px; column-rule-color:silver;
+}
+
+
+
+	
+
+
 
 
 

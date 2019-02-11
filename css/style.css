@@ -267,6 +267,7 @@ article#zen-benefits p{
 	
 }
 
+
 #zen-requirements h3{
 	text-decoration: underline;
 	font-size:3.5em;
@@ -300,8 +301,6 @@ footer  {
 	bottom:0px;
 	text-align:center;
 
-	
-	
 }
 body:after{
 	content:"";
@@ -334,9 +333,11 @@ footer a{
 	float:right;
 }
 
-.zen-resources{
-	background-color:gray;
-	float:left;
+.zen-resources:after{
+	content""
+	display:block;
+	height:1px;
+
 }
 
 

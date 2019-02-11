@@ -87,17 +87,18 @@ h2{
 	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #f4e36b, 0 0 30px #f4e36b, 0 0 40px #f4e36b, 0 0 55px #f4e36b, 0 0 75px #f4e36b
 }
 
-#zen-summary{
+.zen-summary{
   float:right;
 	z-index:2;
 	position:relative;
-	top:-200px;
+	top:-100px;
 }
 
 .preamble{
 	z-index:3;
 	position:relative;
 	top:-100px;
+	z-index:30;
 }
 .zen-requirements{
   clear:right;

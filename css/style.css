@@ -66,12 +66,15 @@ header:after{
 
 aside.sidebar{
 	z-index:100;
-	position:relative;
-	background: #2babe1;
+	position:fixed;
+	top:0;
+	height:70px;
+	background: #f4a2f1;
 	border-top: 5px solid #edf6ff;
-	clear: both;
-	display: block;
+	display: inline-block;
 	width: 100%;
+	-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000;
 
 
 } 
@@ -133,12 +136,11 @@ h2{
 	-moz-border-radius: 28px 13px 12px 21px;
 	border-radius: 28px 13px 12px 21px;
 	border: 3px dashed #9436A4;
-	-moz-transform: scale(1.2) rotate(17deg) skew(29deg, 0deg);
-	-moz-transform: rotate(17deg) skew(29deg, 0deg);
-	-webkit-transform: rotate(17deg) skew(29deg, 0deg);
-	-o-transform: rotate(17deg) skew(29deg, 0deg);
-	-ms-transform: rotate(17deg) skew(29deg, 0deg);
-	transform: rotate(17deg) skew(29deg, 0deg);
+-moz-transform: scale(0.8) skew(0deg, 3deg);
+-webkit-transform: scale(0.8) skew(0deg, 3deg);
+-o-transform: scale(0.8) skew(0deg, 3deg);
+-ms-transform: scale(0.8) skew(0deg, 3deg);
+transform: scale(0.8) skew(0deg, 3deg);
 }
 
 article#zen-summary{
@@ -325,7 +327,7 @@ footer a{
 .design-selection{
 	xbackground-color:yellow;
 	float:left;
-	margin-left:50px;
+	margin-left:250px;
 	height:200px;
 }	
 .select{
@@ -337,7 +339,7 @@ footer a{
 .design-archives{
 
 	width:30%;
-	padding-left:50%;
+	padding-left:60%;
 }
 
 .design-selection:after,
@@ -347,6 +349,10 @@ footer a{
 	display:block;
 	height:1px;
 
+}
+nav a{
+	font-size:23px;
+	font-family:verdana;;
 }
 
 

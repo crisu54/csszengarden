@@ -64,20 +64,22 @@ header:after{
   z-index:20;
 }
 
-aside.sidebar{
+aside{
 	z-index:100;
 	position:fixed;
 	top:0;
 	height:70px;
-	background: #f4a2f1;
-	border-top: 5px solid #edf6ff;
 	display: inline-block;
 	width: 100%;
 	-webkit-box-shadow: 5px 5px 15px 5px #000000; 
-box-shadow: 5px 5px 15px 5px #000000;
-
-
+	box-shadow: 5px 5px 15px 5px #000000;
 } 
+
+body:before{
+	height:70px;
+	content:"";
+	display:block;
+}
 
 section article{
 	xbackground-color:rgba(85, 107, 103, 0.8);
@@ -108,20 +110,20 @@ article#zen-preamble h3{
 
 h1{
   font-size:70px;
-
 	text-align:center;
-	margin-top:80;
-	padding-top:50px;
-	color: #A7DD3C;
+	margin-top:70px;
+
 	Color: #FFFFFF;
 	text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-
-}
+ 	-webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  padding-top: 1.55em;
+  padding-bottom: 0.83em;
+} 
 
 h2{
 	font-size:30px;
 	margin-top: -50px;
-	color:red;
 	text-align:center;
 	color: #fff;
 	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #f4e36b, 0 0 30px #f4e36b, 0 0 40px #f4e36b, 0 0 55px #f4e36b, 0 0 75px #f4e36b

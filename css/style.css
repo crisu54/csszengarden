@@ -110,7 +110,7 @@ h1{
   font-size:70px;
 
 	text-align:center;
-	margin-top:0;
+	margin-top:80;
 	padding-top:50px;
 	color: #A7DD3C;
 	Color: #FFFFFF;
@@ -120,6 +120,7 @@ h1{
 
 h2{
 	font-size:30px;
+	margin-top: -50px;
 	color:red;
 	text-align:center;
 	color: #fff;

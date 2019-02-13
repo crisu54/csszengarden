@@ -55,7 +55,7 @@ header:after{
 /*------------------------Navigation------------------------------*/
 
 @media only screen and (min-width: 600px) {
-	body, html {
+	aside {
 		font-size: 48%;
 	}
 }
@@ -81,6 +81,9 @@ header:after{
 @media only screen and (min-width: 800px) {
 	aside {
 		display: inline-block;
+		position:fixed;
+		z-index:100;
+		Top:0;
 	}
 	
 	aside #menu {
@@ -126,9 +129,9 @@ header:after{
 		max-height: 700px !important;
 	}
 
-	aside div.wrapper div.design-selection:hover > ul,
-	aside div.wrapper div.design-archives:hover > ul,
-	aside div.wrapper div.zen-resources:hover > ul
+	aside div.wrapper div.design-selection:hover  ul,
+	aside div.wrapper div.design-archives:hover  ul,
+	aside div.wrapper div.zen-resources:hover  ul
 	{
 		max-height: 700px;
 	}
@@ -203,9 +206,9 @@ header:after{
 		top: 0;
 	}
 	
-	aside div.wrapper div.design-selection:hover > ul,
-	aside div.wrapper div.design-archives:hover > ul,
-	aside div.wrapper div.zen-resources:hover > ul
+	aside div.wrapper div.design-selection:hover ul,
+	aside div.wrapper div.design-archives:hover ul,
+	aside div.wrapper div.zen-resources:hover ul
 	{
 		transition: all 500ms;
 		max-height: 500px;
@@ -573,30 +576,6 @@ footer a{
 	float:left;
 	margin-left:250px;
 }	
-/* .select{
-	color:black;
-	font-family:verdana;
-	font-size:20px;
-}
-.zen-resources,
-.design-archives{
-
-	width:30%;
-	padding-left:60%;
-}
-
-.design-selection:after,
-.design-archives:after,
-.zen-resources:after{
-	content:"";
-	display:block;
-	height:1px;
-
-}
-nav a{
-	font-size:23px;
-	font-family:verdana;
-} */
 
 /*----------------------Media------------*/
 
@@ -610,7 +589,7 @@ section{
 	background-color:#7b076c;
 	border-bottom:4px solid black;
 	overflow:hidden;
-	xheight: 380px;
+	height: 480px;
 /*   position:relative;
   z-index: 2; */
 }
@@ -637,31 +616,272 @@ header *{
 } */
 
 header {
-	background: none;
+	background: url(../bilder/pic05.jpg)no-repeat center center fixed;
   background-repeat:no-repeat;
   background-size:cover;
-	xheight: 480px;
+	height: 480px;
   z-index:1;
 }
 
 header:after{
   background-image:none;/*breite500px höhe 484px*/
-  width:100%;
-  xheight:484px;
+  width:100&;
   position: static; 
   content:"";
   left:50%;
   top: 242px;    /*anzeigehöhe header background image(pic05.jpg 480-die halbe Bildgröße dieses Bildes ( Schallplatte.png)*/
   margin-left: -250px; /*halbe Bildbreite*/
 	z-index:1;
-	;
-	
 }
+
+/*------------------------Navigation------------------------------*/
+
+@media only screen and (min-width: 600px) {
+	aside {
+		font-size: 48%;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	aside {
+		font-size: 53%;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	aside {
+		font-size: 57%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	aside {
+		font-size: 70%;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	aside {
+		display: inline-block;
+		position:fixed;
+		z-index:100;
+		Top:0;
+	}
+	
+	aside #menu {
+		display: none;
+	}
+	
+	aside div.wrapper {
+		transition: all 300ms;
+		display: inline-block;
+	}
+	
+	aside div.wrapper div.design-selection,
+	aside div.wrapper div.design-archives,
+	aside div.wrapper div.zen-resources
+	{
+		transition: all 300ms;
+	}
+	
+	aside h3,
+	aside div.wrapper div.design-selection a,
+	aside div.wrapper div.design-archives a,
+	aside div.wrapper div.zen-resources a
+	{
+		padding:1.17em;
+		margin: 0 1px 0 0;
+	}
+	
+	aside div.wrapper div.design-selection ul,
+	aside div.wrapper div.design-archives ul,
+	aside div.wrapper div.zen-resources ul
+	{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		transition: 300ms all;
+	}
+	
+	/* für DEBUG: Menüs immer ausgeklappt */
+	xaside div.wrapper div.design-selection > ul,
+	xaside div.wrapper div.design-archives > ul,
+	xaside div.wrapper div.zen-resources > ul
+	{
+		max-height: 700px !important;
+	}
+
+	aside div.wrapper div.design-selection:hover  ul,
+	aside div.wrapper div.design-archives:hover  ul,
+	aside div.wrapper div.zen-resources:hover  ul
+	{
+		max-height: 700px;
+	}
+	
+	aside div.wrapper div.design-selection ul li,
+	aside div.wrapper div.design-archives ul li,
+	aside div.wrapper div.zen-resources ul li
+	{
+		border-bottom: 1px solid black; /* #8c1e31; */
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	aside {
+		display: block;
+	}
+	
+	aside:before {
+		content: "Menü";
+		padding: 1.17em 5% 1.17em 5%;
+		float: left;
+		width: 90%;
+		text-align: center;
+		font-size: 1.5em;
+		color: #f41edd;
+		cursor: pointer;
+		font-weight: 300;
+		xtransition: all 5000ms;
+		font-family: 'Roboto', sans-serif;
+		display: block;
+	}
+	
+	aside div.wrapper {
+		width: 100%;
+		max-height: 0;
+		transition: all 500ms;
+		overflow: hidden;
+		float: left;
+		display: block;
+	}
+	
+	aside:hover > div.wrapper {
+		max-height: 800px;
+	}
+	
+	aside div.wrapper div.design-selection,
+	aside div.wrapper div.design-archives,
+	aside div.wrapper div.zen-resources
+	{
+		width: 100% ;
+	}
+	
+	aside h3,
+	aside div.wrapper div.design-selection a,
+	aside div.wrapper div.design-archives a,
+	aside div.wrapper div.zen-resources a
+	{
+		padding: 1.17em 5% 1.17em 5%;
+		width: 90%;
+		margin: 0;
+	}
+	
+	aside div.wrapper div.design-selection ul,
+	aside div.wrapper div.design-archives ul,
+	aside div.wrapper div.zen-resources ul
+	{
+		transition: all 1000ms;
+		transition-delay: 300ms;
+		float: left;
+		
+		position: relative;
+		top: 0;
+	}
+	
+	aside div.wrapper div.design-selection:hover ul,
+	aside div.wrapper div.design-archives:hover ul,
+	aside div.wrapper div.zen-resources:hover ul
+	{
+		transition: all 500ms;
+		max-height: 500px;
+	}
+	
+	aside div.wrapper div.design-selection ul li,
+	aside div.wrapper div.design-archives ul li,
+	aside div.wrapper div.zen-resources ul li
+	{
+		display: block;
+		float: left;
+		background: #8c1e31;
+		transition: all 500ms;
+		width:100%; 
+		
+		border-bottom: 0;
+	}
+	
+	aside div.wrapper div.design-selection ul li a,
+	aside div.wrapper div.design-archives ul li a,
+	aside div.wrapper div.zen-resources ul li a
+	{
+		background: #8c1e31;
+	}    
+}
+
+aside {
+	color: #c8354e;
+}
+
+aside div.wrapper {
+	margin: 0;
+	padding: 0;
+}
+
+aside div.wrapper div.design-selection,
+aside div.wrapper div.design-archives,
+aside div.wrapper div.zen-resources
+{
+	float: left;
+	position: relative;
+}
+
+aside h3,
+aside div.wrapper div.design-selection a,
+aside div.wrapper div.design-archives a,
+aside div.wrapper div.zen-resources a
+{
+	display: block;
+	text-decoration: none;
+	background: #c8345e;
+	font-weight: 300;
+	transition: all 300ms;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	font-size: 1.5em;
+	text-align: center;
+	min-width: 12em;
+}
+
+aside h3,
+aside div.wrapper div.design-selection:hover > a,
+aside div.wrapper div.design-archives:hover > a,
+aside div.wrapper div.zen-resources:hover > a
+{
+	background: #8c1e31;
+}
+
+aside div.wrapper div.design-selection ul,
+aside div.wrapper div.design-archives ul,
+aside div.wrapper div.zen-resources ul
+{
+	width: 100%;
+	overflow: hidden;
+	max-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*----------------------Ende der Navigation------------------*/
+
+
+
+
+
+
+
 
 .page-wrapper{
 	background-color: yellow;
-	position:relative;
-	
+	position:static;
 }
 
 #zen-intro{
@@ -670,14 +890,14 @@ header:after{
 
 /* aside.sidebar{
 	z-index:100;
-	position:static;
-	xbackground: #f4a2f1;
+	position:relative;
+	background: #f4a2f1;
 	border-top: 5px solid #edf6ff;
-	margin-top:-50px;
+	clear: both;
 	display: block;
 	width: 100%;
-} 
- */
+}  */
+
 section article{
 	xbackground-color:rgba(85, 107, 103, 0.8);
 	width:100%;
@@ -701,6 +921,9 @@ article#zen-preamble h3{
   font-size:3em;
 	color:#690872;
 }
+
+
+
 
 h1{
   font-size:70px;
@@ -731,11 +954,12 @@ h2{
 	-moz-border-radius: 28px 13px 12px 21px;
 	border-radius: 28px 13px 12px 21px;
 	border: 3px dashed #9436A4;
--moz-transform: scale(0.5) rotate(9deg) translate(-15px, -4px) skew(20deg, 1deg);
--webkit-transform: scale(0.5) rotate(9deg) translate(-15px, -4px) skew(20deg, 1deg);
--o-transform: scale(0.5) rotate(9deg) translate(-15px, -4px) skew(20deg, 1deg);
--ms-transform: scale(0.5) rotate(9deg) translate(-15px, -4px) skew(20deg, 1deg);
-transform: scale(0.5) rotate(9deg) translate(-15px, -4px) skew(20deg, 1deg);
+	-moz-transform: scale(1.2) rotate(17deg) skew(29deg, 0deg);
+	-moz-transform: rotate(17deg) skew(29deg, 0deg);
+	-webkit-transform: rotate(17deg) skew(29deg, 0deg);
+	-o-transform: rotate(17deg) skew(29deg, 0deg);
+	-ms-transform: rotate(17deg) skew(29deg, 0deg);
+	transform: rotate(17deg) skew(29deg, 0deg);
 }
 
 article#zen-summary{
@@ -753,7 +977,7 @@ article#zen-summary{
 
 h3{
   margin:0px;
-	padding:2%
+	padding:2%;
 }
 
 #zen-supporting{
@@ -766,6 +990,7 @@ h3{
 } 
  #zen-explanation{
   width:100%;
+
 	margin-right:0;
 	position:static;
 	left:0;
@@ -777,7 +1002,7 @@ h3{
 	article#zen-explanation p{
   font-size:20px;
 	color:#690872;
-	padding:2%
+	padding:2%;
 }
 	
 article#zen-explanation h3{
@@ -791,10 +1016,11 @@ article#zen-explanation h3{
 	 position:static;
 	 left:0;
 	background-color:#c3cac5;
+	position:static;
 	top:120px;
-	-webkit-column-count: 1;
-	-moz-column-count: 1;
-	column-count: 1;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
 	-webkit-column-gap: 18px;
 	-moz-column-gap: 18px;
 	column-gap: 18px;
@@ -808,6 +1034,8 @@ article#zen-participation h3{
   font-size:3em;
 	color:#690872;
 	padding:2%;
+
+	
 }
 
 article#zen-participation p{
@@ -838,10 +1066,11 @@ article#zen-benefits h3{
 article#zen-benefits p{
 	color:white;
 	font-family: verdana;
-	width:95%;
-	font-size:1.0em;
+
+	width:30%;
+	font-size:1.2em;
 	position:static;
-	padding:5% 2% 3% 2%;
+	left:15%;
 	text-align:justify;
 }
 
@@ -858,17 +1087,18 @@ article#zen-benefits p{
 	width:100%;
 	background-image:none;
 	background-color:rgba(255, 255, 255, 0.4);
-	xbox-shadow: 5px 5px 40px #615f61;
+	box-shadow: 5px 5px 40px #615f61;
 	position:static;
-	padding:0px;
-	margin-top:-15px;
+	right:15%;
+	margin-top:200px;
 	float:none;
 }
 #zen-requirements:before{
-	content: none; 
+	content: none;
+
 	position:static;
-	xoverflow:hidden;
-	left:-70%;
+	overflow:hidden;
+	left:0%;
 	width:100%;
 	
 }
@@ -894,9 +1124,8 @@ article#zen-benefits p{
 
 .requirements p:last-child {
 	margin:0;
-} 
-
-
+	
+}
 
 /*  aricle#zen-requirements.col P {
    margin-top: 1.8ex;
@@ -908,7 +1137,7 @@ article#zen-benefits p{
 footer  {
 	background-color:black;
 	height:40px;
-	position:absolut;
+	position:static;
 	width:100%;
 	bottom:0px;
 	text-align:center;
@@ -923,57 +1152,17 @@ body:after{
 
 footer a{
 	color:white;
-	font-size:1em;
-	padding-left:20px;
+	font-size:22px;
+	padding-left:50px;
 	
 	font-family:verdana;
 	
 }
 
-/* .design-selection{
+.design-selection{
+	xbackground-color:yellow;
 	float:none;
-	background-color:#f3d3e9;
-	xheight:200px;
-	padding:20px auto;
-	margin:0;
-}	
-.select{
-	color:black;
-	font-family:verdana;
-	font-size:20px;
-	margin-top:50px;
+	margin-left:250px;
 }
-h3.select{
-	xmargin-block-start:0;
 }
-
-.zen-resources,
-.design-archives{
-	width:100%;
-}
-
-nav a{
-	font-size:15px;
-	font-family:verdana;
-}
-.design-archives{
-	background-color:#6beaf4;
-	position:static;
-	padding:0;
-	margin:0;
-	margin-top:0px;
-	clear:both;
-}
-	
-.zen-resources{
-	background-color:#fcd133;
-	position:static;
-	padding:0;
-	margin:0;
-	margin-top:0px;
-}
- */
-
-	
-
 	

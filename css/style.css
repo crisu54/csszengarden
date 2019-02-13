@@ -56,35 +56,29 @@ header:after{
 
 @media only screen and (min-width: 600px) {
 	aside {
-		font-size: 48%;
+		font-size: 72%;
 	}
 }
 
 @media only screen and (min-width: 600px) {
 	aside {
-		font-size: 53%;
+		font-size: 80%;
 	}
 }
 
 @media only screen and (min-width: 800px) {
 	aside {
-		font-size: 57%;
+		font-size: 86%;
 	}
 }
 
 @media only screen and (min-width: 1200px) {
 	aside {
-		font-size: 70%;
+		font-size: 105%;
 	}
 }
 
 @media only screen and (min-width: 800px) {
-	aside {
-		display: inline-block;
-		position:fixed;
-		z-index:100;
-		Top:0;
-	}
 	
 	aside #menu {
 		display: none;
@@ -145,9 +139,6 @@ header:after{
 }
 
 @media only screen and (max-width: 800px) {
-	aside {
-		display: block;
-	}
 	
 	aside:before {
 		content: "Menü";
@@ -155,7 +146,6 @@ header:after{
 		float: left;
 		width: 90%;
 		text-align: center;
-		font-size: 1.5em;
 		color: #f41edd;
 		cursor: pointer;
 		font-weight: 300;
@@ -237,6 +227,10 @@ header:after{
 
 aside {
 	color: #c8354e;
+	display: block;
+	position: fixed;
+	z-index: 100;
+	Top: 0;
 }
 
 aside div.wrapper {
@@ -264,7 +258,6 @@ aside div.wrapper div.zen-resources a
 	transition: all 300ms;
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
-	font-size: 1.5em;
 	text-align: center;
 	min-width: 12em;
 }
@@ -306,20 +299,9 @@ aside div.wrapper div.zen-resources ul
   z-index:20;
 }
 
-/* aside.sidebar{
-	z-index:100;
-	position:relative;
-	background: #f4a2f1;
-	border-top: 5px solid #edf6ff;
-	clear: both;
-	display: block;
-	width: 100%;
-}  */
-
 section article{
 	xbackground-color:rgba(85, 107, 103, 0.8);
 	width:30%;
-
 }
 
 .preamble{
@@ -446,7 +428,7 @@ article#zen-explanation h3{
 	-moz-column-rule: 1px solid rgba(164,56,150,0.5);
 	column-rule: 1px solid rgba(164,56,150,0.5);
 
-	 }
+}
 
 article#zen-participation h3{
   font-size:3em;
@@ -571,11 +553,6 @@ footer a{
 	
 }
 
-.design-selection{
-	xbackground-color:yellow;
-	float:left;
-	margin-left:250px;
-}	
 
 /*----------------------Media------------*/
 
@@ -634,251 +611,6 @@ header:after{
 	z-index:1;
 }
 
-/*------------------------Navigation------------------------------*/
-
-@media only screen and (min-width: 600px) {
-	aside {
-		font-size: 48%;
-	}
-}
-
-@media only screen and (min-width: 600px) {
-	aside {
-		font-size: 53%;
-	}
-}
-
-@media only screen and (min-width: 800px) {
-	aside {
-		font-size: 57%;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	aside {
-		font-size: 70%;
-	}
-}
-
-@media only screen and (min-width: 800px) {
-	aside {
-		display: inline-block;
-		position:fixed;
-		z-index:100;
-		Top:0;
-	}
-	
-	aside #menu {
-		display: none;
-	}
-	
-	aside div.wrapper {
-		transition: all 300ms;
-		display: inline-block;
-	}
-	
-	aside div.wrapper div.design-selection,
-	aside div.wrapper div.design-archives,
-	aside div.wrapper div.zen-resources
-	{
-		transition: all 300ms;
-	}
-	
-	aside h3,
-	aside div.wrapper div.design-selection a,
-	aside div.wrapper div.design-archives a,
-	aside div.wrapper div.zen-resources a
-	{
-		padding:1.17em;
-		margin: 0 1px 0 0;
-	}
-	
-	aside div.wrapper div.design-selection ul,
-	aside div.wrapper div.design-archives ul,
-	aside div.wrapper div.zen-resources ul
-	{
-		position: absolute;
-		top: 100%;
-		left: 0;
-		transition: 300ms all;
-	}
-	
-	/* für DEBUG: Menüs immer ausgeklappt */
-	xaside div.wrapper div.design-selection > ul,
-	xaside div.wrapper div.design-archives > ul,
-	xaside div.wrapper div.zen-resources > ul
-	{
-		max-height: 700px !important;
-	}
-
-	aside div.wrapper div.design-selection:hover  ul,
-	aside div.wrapper div.design-archives:hover  ul,
-	aside div.wrapper div.zen-resources:hover  ul
-	{
-		max-height: 700px;
-	}
-	
-	aside div.wrapper div.design-selection ul li,
-	aside div.wrapper div.design-archives ul li,
-	aside div.wrapper div.zen-resources ul li
-	{
-		border-bottom: 1px solid black; /* #8c1e31; */
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	aside {
-		display: block;
-	}
-	
-	aside:before {
-		content: "Menü";
-		padding: 1.17em 5% 1.17em 5%;
-		float: left;
-		width: 90%;
-		text-align: center;
-		font-size: 1.5em;
-		color: #f41edd;
-		cursor: pointer;
-		font-weight: 300;
-		xtransition: all 5000ms;
-		font-family: 'Roboto', sans-serif;
-		display: block;
-	}
-	
-	aside div.wrapper {
-		width: 100%;
-		max-height: 0;
-		transition: all 500ms;
-		overflow: hidden;
-		float: left;
-		display: block;
-	}
-	
-	aside:hover > div.wrapper {
-		max-height: 800px;
-	}
-	
-	aside div.wrapper div.design-selection,
-	aside div.wrapper div.design-archives,
-	aside div.wrapper div.zen-resources
-	{
-		width: 100% ;
-	}
-	
-	aside h3,
-	aside div.wrapper div.design-selection a,
-	aside div.wrapper div.design-archives a,
-	aside div.wrapper div.zen-resources a
-	{
-		padding: 1.17em 5% 1.17em 5%;
-		width: 90%;
-		margin: 0;
-	}
-	
-	aside div.wrapper div.design-selection ul,
-	aside div.wrapper div.design-archives ul,
-	aside div.wrapper div.zen-resources ul
-	{
-		transition: all 1000ms;
-		transition-delay: 300ms;
-		float: left;
-		
-		position: relative;
-		top: 0;
-	}
-	
-	aside div.wrapper div.design-selection:hover ul,
-	aside div.wrapper div.design-archives:hover ul,
-	aside div.wrapper div.zen-resources:hover ul
-	{
-		transition: all 500ms;
-		max-height: 500px;
-	}
-	
-	aside div.wrapper div.design-selection ul li,
-	aside div.wrapper div.design-archives ul li,
-	aside div.wrapper div.zen-resources ul li
-	{
-		display: block;
-		float: left;
-		background: #8c1e31;
-		transition: all 500ms;
-		width:100%; 
-		
-		border-bottom: 0;
-	}
-	
-	aside div.wrapper div.design-selection ul li a,
-	aside div.wrapper div.design-archives ul li a,
-	aside div.wrapper div.zen-resources ul li a
-	{
-		background: #8c1e31;
-	}    
-}
-
-aside {
-	color: #c8354e;
-}
-
-aside div.wrapper {
-	margin: 0;
-	padding: 0;
-}
-
-aside div.wrapper div.design-selection,
-aside div.wrapper div.design-archives,
-aside div.wrapper div.zen-resources
-{
-	float: left;
-	position: relative;
-}
-
-aside h3,
-aside div.wrapper div.design-selection a,
-aside div.wrapper div.design-archives a,
-aside div.wrapper div.zen-resources a
-{
-	display: block;
-	text-decoration: none;
-	background: #c8345e;
-	font-weight: 300;
-	transition: all 300ms;
-	font-family: 'Roboto', sans-serif;
-	color: #fff;
-	font-size: 1.5em;
-	text-align: center;
-	min-width: 12em;
-}
-
-aside h3,
-aside div.wrapper div.design-selection:hover > a,
-aside div.wrapper div.design-archives:hover > a,
-aside div.wrapper div.zen-resources:hover > a
-{
-	background: #8c1e31;
-}
-
-aside div.wrapper div.design-selection ul,
-aside div.wrapper div.design-archives ul,
-aside div.wrapper div.zen-resources ul
-{
-	width: 100%;
-	overflow: hidden;
-	max-height: 0;
-	margin: 0;
-	padding: 0;
-}
-
-/*----------------------Ende der Navigation------------------*/
-
-
-
-
-
-
-
-
 .page-wrapper{
 	background-color: yellow;
 	position:static;
@@ -888,20 +620,9 @@ aside div.wrapper div.zen-resources ul
   z-index:20;
 }
 
-/* aside.sidebar{
-	z-index:100;
-	position:relative;
-	background: #f4a2f1;
-	border-top: 5px solid #edf6ff;
-	clear: both;
-	display: block;
-	width: 100%;
-}  */
-
 section article{
 	xbackground-color:rgba(85, 107, 103, 0.8);
 	width:100%;
-
 }
 
 .preamble{
@@ -995,10 +716,7 @@ h3{
 	position:static;
 	left:0;
  }
- 
 
-	 
-	 
 	article#zen-explanation p{
   font-size:20px;
 	color:#690872;
@@ -1095,7 +813,6 @@ article#zen-benefits p{
 }
 #zen-requirements:before{
 	content: none;
-
 	position:static;
 	overflow:hidden;
 	left:0%;
@@ -1136,7 +853,7 @@ article#zen-benefits p{
 
 footer  {
 	background-color:black;
-	height:40px;
+	xheight:40px;
 	position:static;
 	width:100%;
 	bottom:0px;
@@ -1145,24 +862,18 @@ footer  {
 }
 body:after{
 	content:"";
-	height:40px;
+	xheight:40px;
 	clear:both;
 	display:block;
 }
 
 footer a{
 	color:white;
-	font-size:22px;
+	font-size:16em;
 	padding-left:50px;
 	
 	font-family:verdana;
 	
-}
-
-.design-selection{
-	xbackground-color:yellow;
-	float:none;
-	margin-left:250px;
 }
 }
 	

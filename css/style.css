@@ -242,7 +242,7 @@ aside {
 	top: 0;
 	width:100%;
 	background-color:#8c1e31;
-	opacity:0.5;
+	xopacity:0.5;
 }
 
 aside div.wrapper {
@@ -613,7 +613,7 @@ header {
 	background: url(../bilder/pic05.jpg)no-repeat center center fixed;
   background-repeat:no-repeat;
   background-size:cover;
-	height: 480px;
+	xheight: 480px;
   z-index:1;
 }
 
@@ -752,9 +752,9 @@ article#zen-explanation h3{
 	 left:0;
 	background-color:#c3cac5;
 	top:120px;
-	-webkit-column-count: 2;
-	-moz-column-count: 2;
-	column-count: 2;
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
 	-webkit-column-gap: 18px;
 	-moz-column-gap: 18px;
 	column-gap: 18px;
@@ -800,12 +800,13 @@ article#zen-benefits h3{
 article#zen-benefits p{
 	color:white;
 	font-family: verdana;
-
+	padding:2%;
+	margin-left:2%;
 	width:100%;
 	font-size:1.2em;
 	position:static;
-	left:15%;
-	text-align:justify;
+
+	xtext-align:justify;
 }
 
 .benefits:before{
@@ -813,8 +814,7 @@ article#zen-benefits p{
 	right:17%;
 	position:static;
 	float:none;
-	top:30px
-
+	top:30px;
 	}
 	
 #zen-requirements{
@@ -878,7 +878,7 @@ footer  {
 }
 body:after{
 	content:"";
-	xheight:40px;
+	height:40px;
 	clear:both;
 	display:block;
 }

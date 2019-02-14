@@ -55,25 +55,32 @@ header:after{
 /*------------------------Navigation------------------------------*/
 
 @media only screen and (min-width: 600px) {
-	aside {
+	
+	aside, 
+	body:before {
 		font-size: 72%;
+		
 	}
 }
 
 @media only screen and (min-width: 600px) {
-	aside {
+	
+	aside,
+	body:before{
 		font-size: 80%;
 	}
 }
 
 @media only screen and (min-width: 800px) {
-	aside {
+	aside,
+	body:before{
 		font-size: 86%;
 	}
 }
 
 @media only screen and (min-width: 1200px) {
-	aside {
+	aside,
+	body:before	{
 		font-size: 105%;
 	}
 }
@@ -97,6 +104,7 @@ header:after{
 	}
 	
 	aside h3,
+	body:before,
 	aside div.wrapper div.design-selection a,
 	aside div.wrapper div.design-archives a,
 	aside div.wrapper div.zen-resources a
@@ -175,6 +183,7 @@ header:after{
 	}
 	
 	aside h3,
+	body:before,
 	aside div.wrapper div.design-selection a,
 	aside div.wrapper div.design-archives a,
 	aside div.wrapper div.zen-resources a
@@ -230,7 +239,10 @@ aside {
 	display: block;
 	position: fixed;
 	z-index: 100;
-	Top: 0;
+	top: 0;
+	width:100%;
+	background-color:#8c1e31;
+	opacity:0.5;
 }
 
 aside div.wrapper {
@@ -247,6 +259,7 @@ aside div.wrapper div.zen-resources
 }
 
 aside h3,
+body:before,
 aside div.wrapper div.design-selection a,
 aside div.wrapper div.design-archives a,
 aside div.wrapper div.zen-resources a
@@ -263,6 +276,7 @@ aside div.wrapper div.zen-resources a
 }
 
 aside h3,
+body:before,
 aside div.wrapper div.design-selection:hover > a,
 aside div.wrapper div.design-archives:hover > a,
 aside div.wrapper div.zen-resources:hover > a
@@ -276,9 +290,12 @@ aside div.wrapper div.zen-resources ul
 {
 	width: 100%;
 	overflow: hidden;
-	max-height: 0;
+	max-hei7ght: 0;
 	margin: 0;
 	padding: 0;
+}
+body:before{
+	content:"\00a0";
 }
 
 /*----------------------Ende der Navigation------------------*/
@@ -734,7 +751,6 @@ article#zen-explanation h3{
 	 position:static;
 	 left:0;
 	background-color:#c3cac5;
-	position:static;
 	top:120px;
 	-webkit-column-count: 2;
 	-moz-column-count: 2;
@@ -785,7 +801,7 @@ article#zen-benefits p{
 	color:white;
 	font-family: verdana;
 
-	width:30%;
+	width:100%;
 	font-size:1.2em;
 	position:static;
 	left:15%;

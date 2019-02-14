@@ -205,7 +205,11 @@ aside div.wrapper div.zen-resources
 	position: relative;
 }
 
-aside div.wrapper div.design-selection a,
+aside div.wrapper div.design-selection a,{
+	
+}
+
+
 aside div.wrapper div.design-archives a,
 aside div.wrapper div.zen-resources a {
 	min-width: 15.5em;
@@ -229,7 +233,7 @@ aside div.wrapper div.zen-resources a
 }
 
 aside h3{
-	font-size:1.5em;
+	font-size:1.25em;
 	min-width: 12em;
 }
 
@@ -243,7 +247,7 @@ aside div.wrapper div.zen-resources:hover > a
 }
 
 aside div.wrapper div.design-selection ul{
-	width:200%;
+	width: 200%;
 }
 
 
@@ -259,8 +263,7 @@ aside div.wrapper div.design-archives ul,
 aside div.wrapper div.zen-resources ul
 {
 	
-	overflow:hidden;
-	overflow-y;
+	overflow-y:hidden;
 	max-height: 0;
 	margin: 0;
 	padding: 0;

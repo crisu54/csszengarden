@@ -1,3 +1,6 @@
+
+/*----import der css Dateien-----*/
+
 @import url(style.default.css);
 @import url(style.mobile.css) screen and (min-device-width : 360px) and (max-device-width : 480px);
 

@@ -205,8 +205,8 @@ aside div.wrapper div.zen-resources
 	position: relative;
 }
 
-aside div.wrapper div.design-selection a,{
-	
+aside div.wrapper div.design-selection a{
+	min-width:14em;
 }
 
 
@@ -247,7 +247,7 @@ aside div.wrapper div.zen-resources:hover > a
 }
 
 aside div.wrapper div.design-selection ul{
-	width: 200%;
+	white-space:nowrap;
 }
 
 
